@@ -1,6 +1,7 @@
 float x1=100, y1=100, x2=200, y2=400;
 PImage linkImage; // Imagen de Link
 PImage tesoroImage; // Imagen del tesoro
+float distanciaTesoro=50;
 
 void setup() {
   size(800, 600);
@@ -20,7 +21,7 @@ void draw() {
     println(textoDistancia);
   
   //mensaje ¡Power-Up activado! si Link está en la posición del cofre
-  if (coordenadaX == coordenadaY) {
+  if (distancia <= distanciaTesoro) {
     println("¡Power-Up activado!");
   }
 
