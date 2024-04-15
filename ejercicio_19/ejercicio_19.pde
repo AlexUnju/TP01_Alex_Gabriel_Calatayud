@@ -17,8 +17,8 @@ void draw() {
 }
 
 void dibujarRectangulo() {
-  for (float y = coordenadasRect.y; y < height; y += (alto + distanciaEntreRect)) {
-    for (float x = coordenadasRect.x; x < width; x += (ancho + distanciaEntreRect)) {
+  for (float x = coordenadasRect.x; x < width; x += (ancho + distanciaEntreRect)) {
+    for (float y = coordenadasRect.y; y < height; y += (alto + distanciaEntreRect)) {
      rect(x, y, ancho, alto);
      fill(255,0,0);
     }
